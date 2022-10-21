@@ -10,8 +10,6 @@ header {
   width: 100%;
   background: #212933;
   display: flex;
-  padding-top: 22px;
-  
 }
 
 #logo-img-box {
@@ -45,7 +43,7 @@ header {
 }
 
 #img-fundo-cs::after, #img-fundo-dota::after, #img-fundo-magic::after, #img-fundo-devs::after {
-    background: radial-gradient(rgba(33,41,51,0), rgba(255,255,255,0.6), rgba(33,41,51, 0));
+    background: radial-gradient(circle at center, rgba(33,41,51,0), rgba(255,255,255,0.6), rgba(33,41,51, 0));
     width: 100%;
     height: 100%;
     position: absolute;
@@ -76,8 +74,6 @@ header {
   width: 100%;
   color: white;
   background: #212933;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 #header-link-ul {
@@ -92,11 +88,41 @@ header {
 #header-links ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 
 #header-links ul li a:hover {
   border-top: 1px solid #777;
   border-bottom: 1px solid #777;
   color: rgb(167, 167, 230);
+}
+
+#main {
+  width: 1080px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
+
+#main-menu {
+  width: 350px;
+  height: 600px;
+  background: #96a2af;
+  padding: 25px;
+  border: 1px solid red;
+}
+
+#content {
+  width: 730px;
+  height: 600px;
+}
+
+#posts {
+  border: 1px solid red;
+  width: 350px;
+  height: 290px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
 }
