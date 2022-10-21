@@ -2,16 +2,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
 }
+
+
 header {
-  border: 1px solid red;
   width: 100%;
-  background: black;
+  background: #212933;
   display: flex;
+  padding-top: 22px;
+  
 }
 
 #logo-img-box {
-  border: 1px solid red;
   color: white;
 }
 
@@ -21,7 +24,6 @@ header {
 }
 
 #logo-title-box {
-  border: 1px solid red;
   width: 100%;
   display: flex;
   align-items: center;
@@ -34,13 +36,25 @@ header {
   font-size: 2.8em;
 }
 
-.img-fundo-jogo {
-    border: 1px solid red;
-    color: white;
+
+#img-fundo-cs, #img-fundo-dota, #img-fundo-magic, #img-fundo-devs {
+    position: relative;
     width: 450px;
     background-size: cover;
     margin-right: 20px;
 }
+
+#img-fundo-cs::after, #img-fundo-dota::after, #img-fundo-magic::after, #img-fundo-devs::after {
+    background: radial-gradient(rgba(33,41,51,0), rgba(255,255,255,0.6), rgba(33,41,51, 0));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
 
 #img-fundo-cs {
     background-image: url(../Images/cs.jpg);
@@ -59,10 +73,11 @@ header {
 }
 
 #header-links {
-  border: 1px solid red;
   width: 100%;
   color: white;
-  background: black;
+  background: #212933;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #header-link-ul {
@@ -83,5 +98,5 @@ header {
 #header-links ul li a:hover {
   border-top: 1px solid #777;
   border-bottom: 1px solid #777;
-  color: white;
+  color: rgb(167, 167, 230);
 }
