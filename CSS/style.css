@@ -98,20 +98,18 @@ header {
 #header-links ul li a:hover {
   border-top: 1px solid #777;
   border-bottom: 1px solid #777;
-  color: rgb(167, 167, 230);
+  color: #96a2af;
 }
 
 #main {
   width: 100%;
   display: flex;
-  
 }
 
 #main-menu {
   width: 350px;
   background: #96a2af;
-  padding: 25px;
-  
+  padding: 15px;
 }
 
 #content {
@@ -135,7 +133,7 @@ article.sensei-card {
 }
 
 article.sensei-card:hover {
-  box-shadow: 2px 1px 13px 0px rgba(248, 2, 2, 0.986);
+  box-shadow: 2px 1px 13px 0px #100ddb;
 }
 
 article.sensei-card img {
@@ -165,3 +163,30 @@ article.sensei-card img {
   font-size: 12px;
 }
 
+.card-title {
+  color: #212933;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+#menu-link-ul {
+  list-style: none;
+  padding: 15px;
+  font-size: 0.9em;
+  line-height: 35px;
+  width: 100%;
+  
+}
+
+#navigation-links ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  padding-left: 15px;
+}
+
+#navigation-links ul li a:hover {
+  text-decoration: none;
+  background: #212933;
+  color:#96a2af;
+}
