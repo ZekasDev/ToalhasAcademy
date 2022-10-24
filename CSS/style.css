@@ -5,17 +5,22 @@
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
 }
 
-
 header {
   width: 100%;
   background: #212933;
   display: flex;
+  justify-content: space-between;
   padding: 15px 0 0 15px;
-
 }
 
 #logo-img-box {
   color: white;
+  display: flex;
+}
+
+.img-fundo-games {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .logo-img {
@@ -37,40 +42,44 @@ header {
   margin-left: 15px;
 }
 
-
-#img-fundo-cs, #img-fundo-dota, #img-fundo-magic, #img-fundo-devs {
-    position: relative;
-    width: 450px;
-    height: 100px;
-    background-size: cover;
-    margin-right: 20px;
+#img-fundo-cs,
+#img-fundo-dota,
+#img-fundo-magic,
+#img-fundo-devs {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  background-size: cover;
+  margin-right: 20px;
 }
 
-#img-fundo-cs::after, #img-fundo-dota::after, #img-fundo-magic::after, #img-fundo-devs::after {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    content: "";
+#img-fundo-cs::after,
+#img-fundo-dota::after,
+#img-fundo-magic::after,
+#img-fundo-devs::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
 }
-
 
 #img-fundo-cs {
-    background-image: url(../Images/cs.jpg);
+  background-image: url(../Images/cs.jpg);
 }
 
 #img-fundo-dota {
-    background-image: url(../Images/dota2.jpg);
+  background-image: url(../Images/dota2.jpg);
 }
 
 #img-fundo-magic {
-    background-image: url(../Images/magic.jpg);
+  background-image: url(../Images/magic.jpg);
 }
 
 #img-fundo-devs {
-    background-image: url(../Images/code.jpg);
+  background-image: url(../Images/code.jpg);
 }
 
 #header-links {
@@ -87,8 +96,14 @@ header {
   gap: 20px;
   margin-right: 20px;
   margin-left: 20px;
-  padding-bottom: 15px;
-  
+  padding-bottom: 5px;
+}
+
+#header-links ul li {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
 }
 
 #header-links ul li a {
@@ -97,9 +112,12 @@ header {
   font-size: 0.9em;
 }
 
-#header-links ul li a:hover {
-  color: #212933;
+#header-links ul li:hover {
   background: #96a2af;
+}
+
+#header-links ul li:hover a {
+  color: #212933;
 }
 
 #main {
@@ -118,7 +136,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 15px 45px;
-  gap: 15px
+  gap: 15px;
 }
 
 #content .card-title {
@@ -127,17 +145,28 @@ header {
   padding: 5px 0 5px 5px;
 }
 
-article.sensei-card {
-  box-shadow: 2px 1px 13px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 9px;
-  transition: box-shadow 0.4s;
+/* .card-top {
+  display: flex;
+  align-items: center; -> SE ARRUMAR OS ÍCONES DO MAGIC E DO VSCODE, LIBERAR ESSA PORRA
+  margin-left: 10px;
+*/
+
+.card {
+  display: flex;
+  flex-direction: column;
 }
 
-article.sensei-card:hover {
+article.card {
+  box-shadow: 2px 1px 13px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 9px;
+  transition: box-shadow 0.7s;
+}
+
+article.card:hover {
   box-shadow: 2px 1px 13px 0px #100ddb;
 }
 
-article.sensei-card img {
+article.card .user-img {
   width: 65px;
   height: 65px;
   border-radius: 9999px;
@@ -176,7 +205,6 @@ article.sensei-card img {
   font-size: 0.9em;
   line-height: 35px;
   width: 100%;
-  
 }
 
 #navigation-links ul li a {
@@ -189,7 +217,7 @@ article.sensei-card img {
 #navigation-links ul li a:hover {
   text-decoration: none;
   background: #212933;
-  color:#96a2af;
+  color: #96a2af;
 }
 
 footer {
@@ -199,3 +227,6 @@ footer {
   padding: 15px 0 0 15px;
   color: #212933;
 }
+
+/* ============================================ */
+
