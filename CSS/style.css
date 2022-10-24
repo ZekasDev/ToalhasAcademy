@@ -230,3 +230,38 @@ footer {
 
 /* ============================================ */
 
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+  #main-menu {
+    display: none;
+  }
+
+  #content {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-img {
+    width: 75px;
+    height: 75px;
+  }
+
+  #img-fundo-cs,
+  #img-fundo-dota,
+  #img-fundo-magic,
+  #img-fundo-devs {
+    width: 100px;
+    height: 80px;
+  }
+
+  .img-fundo-games {
+    justify-content: space-evenly;
+  }
+
+  #header-link-ul {
+    gap: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+}
