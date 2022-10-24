@@ -242,6 +242,11 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  #logo-img-box {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
   .logo-img {
     width: 75px;
     height: 75px;
@@ -251,8 +256,10 @@ footer {
   #img-fundo-dota,
   #img-fundo-magic,
   #img-fundo-devs {
-    width: 100px;
-    height: 80px;
+    width: 85px;
+    height: 70px;
+    background-position: center;
+
   }
 
   .img-fundo-games {
