@@ -262,6 +262,21 @@ footer {
   #header-link-ul {
     gap: 0;
     margin: 0;
-    font-size: 14px;
+    font-size: 15px;
+    justify-content: space-around;
   }
+
+  .logo-title {
+    font-size: 23px;
+  }
+
+  #header-links ul li {
+    width: unset;
+  }
+
+  #navigation-links ul li a {
+    padding: 0;
+  }
+
 }
+
